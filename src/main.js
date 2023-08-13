@@ -15,3 +15,23 @@ OVERLAY.onclick = function() {
     MENU_MOBIE.classList.toggle('show')
     OVERLAY.classList.toggle('show1')
 }
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        500:{
+            items:2
+        },
+        768: {
+            item:3,
+        },
+        1000:{
+            items:4
+        }
+    }
+})
