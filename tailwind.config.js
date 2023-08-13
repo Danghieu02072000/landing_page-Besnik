@@ -3,7 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
-      xs: '330px',
+      xxs: '330px',
+      xs: '500px',
       sm: '640px',
       md: '768px',
       'md-max': {max:'767px'},
@@ -23,7 +24,9 @@ module.exports = {
       '2xl':['24px', { lineHeight: '32px'}],
       '3xl':['30px', { lineHeight: '36px'}],
       '4xl':['36px', { lineHeight: '40px'}],
-      '5xl':['48px', { lineHeight: '54px'}]
+      '5xl':['48px', { lineHeight: '54px'}],
+      '6xl':['52px', { lineHeight: '58px'}],
+      '7xl':['62px', { lineHeight: '68px'}]
     },
     container : {
       center: true,
