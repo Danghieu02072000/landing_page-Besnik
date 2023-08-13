@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
-      xs: '376px',
+      xs: '330px',
       sm: '640px',
       md: '768px',
       'md-max': {max:'767px'},
@@ -28,10 +28,15 @@ module.exports = {
     container : {
       center: true,
       padding : {
-        default: '16px',
+        DEFAULT: '16px',
         md: '24px',
         xl: '32px'
       },
+    },
+    fontFamily : {
+      default : ['Inter','sans-serif'],
+      highlights: ['Seaweed Script','cursive']
+
     },
     extend: {
       colors: {
@@ -55,6 +60,12 @@ module.exports = {
         'yellow': '#FFBB27',
         'orange-f4' : '#FF4D20',
         'star' : '#FEB618'
+
+      },
+      maxWidth : {
+        md: '704px',
+        lg: '925px',
+        xl: '1176px'
 
       }
     },
