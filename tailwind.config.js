@@ -55,6 +55,7 @@ module.exports = {
         'gray-93': '#939393',
         'gray-66': '#666666',
         'gray-76': '#767676',
+        'gray-f6': '#F6F6F6',
         'gray-pahorder': '#B1B1B1',
         'smoke-c0':  '#C0C0C0',
         'smoke-c7' : '#C7C7C7',
