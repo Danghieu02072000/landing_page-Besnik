@@ -21,4 +21,7 @@
     .owl-carousel .owl-item img {
         width: auto;
     }
+    .bg-radion {
+        background-image: linear-gradient(113deg, #FEB618 50%, #2FB652 50%);
+    }
 }
