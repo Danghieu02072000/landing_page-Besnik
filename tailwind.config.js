@@ -49,14 +49,17 @@ module.exports = {
         'black-17': '#171717',
         'black-23': '#232323',
         'back-25':'#252525',
+        'black-03': '#030000',
         gray: '#646464',
         'gray-78': '#787878',
         'gray-96': '#969696',
         'gray-83': '#838383',
         'gray-93': '#939393',
         'gray-66': '#666666',
+        'gray-E6': '#E6E6E6',
         'gray-76': '#767676',
         'gray-f6': '#F6F6F6',
+        'gray-f8': '#F8F8F8',
         'gray-pahorder': '#B1B1B1',
         'smoke-c0':  '#C0C0C0',
         'smoke-c7' : '#C7C7C7',
@@ -66,6 +69,7 @@ module.exports = {
         'orange-f4' : '#FF4D20',
         'star' : '#FEB618',
         'border': '#DBDBDB',
+
 
       },
       maxWidth : {
