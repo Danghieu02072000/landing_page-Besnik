@@ -5,7 +5,7 @@
 
 @layer base {
     body{
-        @apply font-default text-base m-0 p-0
+        @apply font-default text-base m-0 p-0 box-border
         
     }
 }
@@ -23,5 +23,14 @@
     }
     .bg-radion {
         background-image: linear-gradient(113deg, #FEB618 50%, #2FB652 50%);
+    }
+    .progress {
+        width: 200px;
+        height: 100px; /* as the half of the width */
+        background-color: gold;
+        border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+        border-top-right-radius: 110px; /* 100px of height + 10px of border */
+        border: 10px solid gray;
+        border-bottom: 0;
     }
 }
