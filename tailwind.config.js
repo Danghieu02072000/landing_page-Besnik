@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     screens: {
       '3xs': '330px',
-      'xs': '390px',
+      '2xs': '390px',
       xs: '500px',
       sm: '640px',
       md: '768px',
@@ -64,7 +64,8 @@ module.exports = {
         'orange': '#FF6139',
         'yellow': '#FFBB27',
         'orange-f4' : '#FF4D20',
-        'star' : '#FEB618'
+        'star' : '#FEB618',
+        'border': '#DBDBDB',
 
       },
       maxWidth : {
