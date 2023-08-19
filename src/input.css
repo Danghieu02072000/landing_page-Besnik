@@ -18,6 +18,7 @@
         opacity: 0;
         visibility: hidden;
     }
+
     .owl-carousel .owl-item img {
         width: auto;
     }
