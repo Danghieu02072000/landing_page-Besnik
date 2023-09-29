@@ -836,6 +836,10 @@ body {
   margin-top: 2.5rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -868,32 +872,20 @@ body {
   display: none;
 }
 
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-
-.aspect-video {
-  aspect-ratio: 16 / 9;
-}
-
-.aspect-auto {
-  aspect-ratio: auto;
-}
-
-.aspect-\[310\/\] {
-  aspect-ratio: 310/;
+.aspect-\[267\/553\] {
+  aspect-ratio: 267/553;
 }
 
 .aspect-\[310\/407\] {
   aspect-ratio: 310/407;
 }
 
-.aspect-\[\] {
-  aspect-ratio: ;
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 
-.aspect-\[267\/553\] {
-  aspect-ratio: 267/553;
+.aspect-video {
+  aspect-ratio: 16 / 9;
 }
 
 .h-10 {
@@ -942,10 +934,6 @@ body {
 
 .h-full {
   height: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-10 {
