@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/carosel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/carosel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./src/input.css">
+</head>
+
+<body>
+    <div class="max-w-xl mx-auto">
+        <header class="container mb-7 md:mt-4">
+            <nav class="flex justify-between items-center h-16">
+                <div class="flex gap-3 h-4 sm:h-6" id="logo">
+                    <img src="./src/img/Logo.png" alt="">
+                    <img src="./src/img/Besnik.png" alt="">
+                </div>
+                <ul class="gap-10 hidden items-center text-sm md:flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="flex gap-3 justify-center items-center">
+                    <button
+                        class="xs:text-xs xs:px-3 xs:py-2 text-sm  py-3 px-4 bg-black text-white inline-block rounded-xl leading-5 hover:opacity-70 hover:shadow-md transition-all">Sign
+                        Up</button>
+                    <div class="xs:p-[9px] p-[10px] bg-orange inline-block rounded-xl"><img
+                            src="./src/img/Icon_cart.png" alt="" class="xs:h-5 xs:w-5 h-6 w-6"></div>
+                </div>
+            </nav>
+            <div id="menu_mobie"
+                class="absolute top-0 left-0 bottom-0 bg-white w-9/12 shadow-2xl z-20 show transition-all duration-1000 md:hidden">
+                <div class="flex justify-between items-center p-7">
+                    <div class="flex gap-3 h-4 sm:h-6" id="logo">
+                        <img src="./src/img/Logo.png" alt="">
+                        <img src="./src/img/Besnik.png" alt="">
+                    </div>
+                    <div class="" id='close'><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6 sm:w-10 sm:h-10 font-semibold">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+                <ul
+                    class="flex flex-col gap-10 sm:gap-20 items-center text-xl sm:text-3xl font-semibold mt-10 sm:mt-20">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="overlay"
+                class="absolute top-0 left-0 w-full h-[100vh] bg-black bg-opacity-80  show1 duration-500 md:hidden z-10">
+            </div>
+        </header>
+        <main class="container ">
+            <section class="mb-20">
+                <div class="flex gap-10 xl:gap-20 flex-col md:flex-row">
+                    <div class="flex flex-col items-center md:items-start">
+                        <h3 class="font-highlights text-orange-f4 mb-4 text-3xl sm:text-4xl" >Hungry?</h3>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl max-w-[515px] md:max-w-[370px] lg:max-w-[515px] mb-6 font-bold text-center md:text-start">Wait a minute for delicious.</h1>
+                        <p class="text-lg text-gray max-w-[452px] md:max-w-xs lg:max-w-[452px] mb-8">Best cooks and best delivery guys all at your
+                            service. Hot tasty food will reach you in 20mins.</p>
+                        <div class=" max-w-full sm:max-w-[464px] md:max-w-[370px] lg:max-w-[464px] flex border border-green rounded-2xl items-stretch overflow-hidden  mb-8 lg:mb-12">
+                            <div class="px-3 flex items-center flex-1 ">
+                                <input type="text"
+                                    class="outline-none placeholder:text-base  text-base leading-4  flex-1 overflow-hidden mr-3"
+                                    placeholder="Enter your delivery location">
+                                <img src="./src/img/icon_location.png" alt="" class="w-6 h-6 ">
+                            </div>
+                            <div class="bg-green h-full flex gap-3 px-0 py-3 sm:pl-5 sm:pr-3 items-center">
+                                <span class="text-base text-white hidden sm:block md:hidden lg:block">Discover</span>
+                                <button class="w-10 h-10 bg-inherit sm:bg-white rounded-lg flex justify-center items-center text-white sm:text-black hover:bg-inherit hover:border-2 hover:border-white hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-lg text-gray-83 font-medium">Already member of our communty? <span class="text-orange-f4">Sign in</span></p>
+                    </div>
+                    <div class="bg-yellow rounded-2xl flex items-center w-full md:w-1/2">
+                        <img src="./src/img/Content.png" alt="ảnh intro" class="aspect-video w-full object-contain">
+                    </div>
+                </div>
+            </section>
+            <section class="mb-28">
+                <div class="flex gap-1.5 items-center mb-16">
+                    <h2 class="text-4xl font-bold ">Food near me</h2>
+                    <img src="./src/img/fire.png" alt="w-7 h-7">
+                </div>
+                <div class="owl-carousel">
+                    <div class="bg-gray-f6  py-5 px-7 rounded-3xl border-[#EFEFEF] flex gap-10 xs:gap-6 lg:gap-8  relative">
+                        <div class="">
+                            <span class="text-2xl font-bold text-black-17 mb-4 block">Pizza</span>
+                            <span class="text-lg text-gray-96 mb-1 block">Starting</span>
+                            <span class="text-lg text-orange-f4 block leading-3">$14.00</span>
+                        </div>
+                        <img src="./src/img/img_p1.png" alt="" class="h-28 ">
+                    </div>
+                    <div class="bg-gray-f6  py-5 px-7 rounded-3xl flex gap-10 xs:gap-6 lg:gap-8  relative">
+                        <div class="">
+                            <span class="text-2xl font-bold text-black-17 mb-4 block">Drinks</span>
+                            <span class="text-lg text-gray-96 mb-1 block">Starting</span>
+                            <span class="text-lg text-orange-f4 block leading-3">$12.00</span>
+                        </div>
+                        <img src="./src/img/img-p2.png" alt="" class="h-28 ">
+                    </div>
+                    <div class="bg-gray-f6  py-5 px-7 rounded-3xl flex gap-10 xs:gap-6 lg:gap-8  relative">
+                        <div class="">
+                            <span class="text-2xl font-bold text-black-17 mb-4 block">Chiken</span>
+                            <span class="text-lg text-gray-96 mb-1 block">Starting</span>
+                            <span class="text-lg text-orange-f4 block leading-3">$4.50</span>
+                        </div>
+                        <img src="./src/img/img-p3.png" alt="" class="h-28 ">
+                    </div>
+                    <div class="bg-gray-f6  py-5 px-7 rounded-3xl flex gap-10 xs:gap-6 lg:gap-8  relative">
+                        <div class="">
+                            <span class="text-2xl font-bold text-black-17 mb-4 block">French</span>
+                            <span class="text-lg text-gray-96 mb-1 block">Starting</span>
+                            <span class="text-lg text-orange-f4 block leading-3">$8.00</span>
+                        </div>
+                        <img src="./src/img/img-p4.png" alt="" class="h-28 ">
+                    </div>
+                    <div class="bg-gray-f6  py-5 px-7 rounded-3xl border-[#EFEFEF] flex gap-10 xs:gap-6 lg:gap-8  relative">
+                        <div class="">
+                            <span class="text-2xl font-bold text-black-17 mb-4 block">Pizza</span>
+                            <span class="text-lg text-gray-96 mb-1 block">Starting</span>
+                            <span class="text-lg text-orange-f4 block leading-3">$14.00</span>
+                        </div>
+                        <img src="./src/img/img_p1.png" alt="" class="h-28 ">
+                    </div>
+                </div>
+            </section>
+            <section class="mb-28 text-center">
+                <h3 class="text-3xl xs:text-4xl text-orange-f4 font-highlights mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Hungry?</h3>
+                <h2 class="text-4xl xs:text-6xl font-bold max-w-[432px] mb-14 mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Wait a minute for delicious.</h2>
+                <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 justify-between gap-4 mb-24">
+                    <div class="flex flex-col justify-center items-center" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                        <img src="./src/img/img_note.png" alt="" class="w-28 mb-5 md:mb-10 aspect-square">
+                        <h3 class="text-2xl font-bold mb-6 text-black-17">Easy to order</h3>
+                        <p class="max-w-[270px] text-base text-gray">n restaurant-controlled online food ordering, the restaurant ..</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                        <img src="./src/img/img_map.png" alt="" class="w-28 mb-10 aspect-square">
+                        <h3 class="text-2xl font-bold mb-6 text-black-17">Easy to order</h3>
+                        <p class="max-w-[270px] text-base text-gray">n restaurant-controlled online food ordering, the restaurant ..</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center " data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                        <img src="./src/img/img_sawich.png" alt="" class="w-28 mb-10 aspect-square">
+                        <h3 class="text-2xl font-bold mb-6 text-black-17">Easy to order</h3>
+                        <p class="max-w-[270px] text-base text-gray">n restaurant-controlled online food ordering, the restaurant ..</p>
+                    </div>
+
+                </div>
+                <div class="max-w-full rounded-3xl bg-radion py-14 px-12 lg:px-20 xl:px-24 text-start relative" data-aos="flip-left" data-aos-duration="800" data-aos-once="true">
+                    <h3 class=" max-w-full xs:max-w-[50%] text-3xl lg:text-4xl text-white mb-5 font-bold">Have you got our offer?</h3>
+                    <p class=" max-w-full text-base xs:max-w-[45%] lg:max-w-[350px] text-white">Best cooks and best delivery guys all at your service. Hot tasty food</p>
+                    <img src="./src/img/img-bg1.png" alt="" class="hidden xs:block absolute top-24 sm:top-0 right-0 sm:right-40">
+                    <img src="./src/img/img-bg2.png" alt="" class="hidden lg:block absolute bottom-0 right-96 ">
+                    <img src="./src/img/img-bg3.png" alt="" class="hidden sm:block absolute bottom-3 right-16">
+                    <img src="./src/img/img-bg4.png" alt="" class="hidden xs:block absolute top-10 right-24">
+                    <img src="./src/img/img-bg5.png" alt="" class="hidden xs:block absolute top-14 right-12">
+                    <img src="./src/img/img-bg6.png" alt="" class="hidden xs:block absolute top-8 right-40 lg:right-80">
+                </div>
+            </section>
+            <section class="mb-28 text-center">
+                <h3 class="text-3xl xs:text-4xl text-orange-f4 font-highlights mb-2 " data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">Popular Menu</h3>
+                <h2 class="text-4xl xs:text-6xl font-bold max-w-[432px] mb-14 mx-auto" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">Wait a minute for delicious.</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10 mb-14">
+                    <div class="flex flex-col text-left rounded-3xl p-6 shadow-md border border-[#EFEFEF]" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">
+                        <div class="h-48 flex justify-center items-center">
+                            <img src="./src/img/icon_menu6.png" alt="" class="mb-5" loading="lazy" class="aspect-square">
+                        </div>
+                        <div class="flex gap-2 mb-4">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                        </div>
+                        <span class="text-xl font-semibold text-black w-[250px] mb-3 truncate cursor-pointer">New York-Style pizza</span>
+                        <p class="text-base text-gray-78 max-w-[280px] mb-4 text-start">Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
+                        <div class="flex justify-between">
+                            <span class="text-xl font-medium text-black-17">$6.40</span>
+                            <div class="flex gap-2 justify-between">
+                                <div class="h-8 w-8 bg-orange-f4 rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_heart.png" alt="" loading="lazy" class="aspect-square">
+                                </div>
+                                <div class="h-8 w-8 bg-black rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_setting.png" alt="" loading="lazy" class="aspect-square">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left rounded-3xl border-[#EFEFEF] p-6 shadow-md border " data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">
+                        <div class="h-48 flex justify-center items-center">
+                            <img src="./src/img/img_menu2.png" alt="" class="mb-5" loading="lazy" class="aspect-square">
+                        </div>
+                        <div class="flex gap-2 mb-4">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                        </div>
+                        <span class="text-xl font-semibold text-black max-w-[250px] mb-3 truncate cursor-pointer">Bento Ekiben Makunchi </span>
+                        <p class="text-base text-gray-78 max-w-[280px] mb-4 text-start">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <div class="flex justify-between">
+                            <span class="text-xl font-medium text-black-17">$4.80</span>
+                            <div class="flex gap-2 justify-between">
+                                <div class="h-8 w-8 bg-orange-f4 rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_heart.png" alt="" loading="lazy" class="aspect-square">
+                                </div>
+                                <div class="h-8 w-8 bg-black rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_setting.png" alt="" loading="lazy" class="aspect-square">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left rounded-3xl border-[#EFEFEF] p-6 shadow-md border" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">
+                        <div class="h-48 flex justify-center items-center">
+                            <img src="./src/img/img_menu1.png" alt="" class="mb-5" loading="lazy" class="aspect-square">
+                        </div>
+                        <div class="flex gap-2 mb-4">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                        </div>
+                        <span class="text-xl font-semibold text-black max-w-[250px] mb-3 truncate cursor-pointer">Humburger Veggei Humburger Veggei </span>
+                        <p class="text-base text-gray-78 max-w-[280px] mb-4 text-start">Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
+                        <div class="flex justify-between">
+                            <span class="text-xl font-medium text-black-17">$5.10</span>
+                            <div class="flex gap-2 justify-between">
+                                <div class="h-8 w-8 bg-orange-f4 rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_heart.png" alt="" loading="lazy" class="aspect-square">
+                                </div>
+                                <div class="h-8 w-8 bg-black rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_setting.png" alt="" loading="lazy" class="aspect-square">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left rounded-3xl border-[#EFEFEF] p-6 shadow-md border" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">
+                        <div class="h-48 flex justify-center items-center">
+                            <img src="./src/img/img_menu3.png" alt="" class="mb-5" loading="lazy">
+                        </div>
+                        <div class="flex gap-2 mb-4">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                        </div>
+                        <span class="text-xl font-semibold text-black max-w-[250px] mb-3 truncate cursor-pointer">Indian Cusine Briyani Buffet</span>
+                        <p class="text-base text-gray-78 max-w-[280px] mb-4 text-start">Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
+                        <div class="flex justify-between">
+                            <span class="text-xl font-medium text-black-17">$3.60</span>
+                            <div class="flex gap-2 justify-between">
+                                <div class="h-8 w-8 bg-orange-f4 rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_heart.png" alt="" loading="lazy" class="aspect-square">
+                                </div>
+                                <div class="h-8 w-8 bg-black rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_setting.png" alt="" loading="lazy" class="aspect-square">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left rounded-3xl border-[#EFEFEF] p-6 shadow-md border" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">
+                        <div class="h-48 flex justify-center items-center">
+                            <img src="./src/img/img_menu4.png" alt="" class="mb-5" loading="lazy">
+                        </div>
+                        <div class="flex gap-2 mb-4">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                        </div>
+                        <span class="text-xl font-semibold text-black max-w-[250px] mb-3 truncate cursor-pointer">Chiken Tikka Buffalo Wing</span>
+                        <p class="text-base text-gray-78 max-w-[280px] mb-4 text-start">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <div class="flex justify-between">
+                            <span class="text-xl font-medium text-black-17">$6.50</span>
+                            <div class="flex gap-2 justify-between">
+                                <div class="h-8 w-8 bg-orange-f4 rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_heart.png" alt="" loading="lazy">
+                                </div>
+                                <div class="h-8 w-8 bg-black rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_setting.png" alt="" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-left rounded-3xl border-[#EFEFEF] p-6 shadow-md border" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">
+                        <div class="h-48 flex justify-center items-center">
+                            <img src="./src/img/img_menu5.png" alt="" class="mb-5" loading="lazy">
+                        </div>
+                        <div class="flex gap-2 mb-4">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                            <img src="./src/img/Star 25.png" alt="" loading="lazy" class="w-6 aspect-square">
+                        </div>
+                        <span class="text-xl font-semibold text-black max-w-[250px] mb-3 truncate cursor-pointer">Fsish Fry Shashik Freid Fish Fsish Fry Shashik Freid Fish</span>
+                        <p class="text-base text-gray-78 max-w-[280px] mb-4 text-start">Lorem Ipsum Lorem Ipsum is simply and dummy text of the printing.</p>
+                        <div class="flex justify-between">
+                            <span class="text-xl font-medium text-black-17">$7.10</span>
+                            <div class="flex gap-2 justify-between">
+                                <div class="h-8 w-8 bg-orange-f4 rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_heart.png" alt="" loading="lazy">
+                                </div>
+                                <div class="h-8 w-8 bg-black rounded-md flex justify-center items-center cursor-pointer hover:opacity-80">
+                                    <img src="./src/img/icon_setting.png" alt="" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="bg-green rounded-2xl flex gap-2 mx-auto px-5 py-3 w-auto justify-center items-center max-w-[188px]" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">
+                    <span class="text-white text-base ">See All Menu</span>
+                    <button class="w-10 h-10 bg-inherit sm:bg-white rounded-lg flex justify-center items-center text-white sm:text-black hover:bg-inherit hover:border-2 hover:border-white hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section class="mb-28 text-center">
+                <h3 class="text-3xl xs:text-4xl text-orange-f4 font-highlights mb-2" data-aos="fade-up" data-aos-duration="700"  data-aos-once="true">Newar Me</h3>
+                <h2 class="text-4xl xs:text-6xl font-bold max-w-[500px] mb-14 mx-auto" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">Find us near your citys.</h2>
+                <div class="flex gap-16 justify-center flex-col md:flex-row">
+                    <div class="flex flex-col w-[500px] max-w-full items-center" data-aos="fade-right" data-aos-duration="800"  data-aos-once="true">
+                        <div class="flex flex-col mb-16">
+                            <span class="text-3xl font-bold mb-2">Pickup restaurent point</span>
+                            <input type="text" placeholder="Enter your delivery location" class="outline-none placeholder:text-gray-pahorder">
+                        </div>
+                        <div class="flex flex-col text-start mb-16">
+                            <span class="text-sm font-semibold leading-7 text-green mb-1">DEPATURE</span>
+                            <input type="text" placeholder="Pickup restaurent point" class="text-2xl placeholder:text-2xl placeholder:text-smoke-c7 outline-none mb-8">
+                            <div class="flex justify-between items-center font-medium">
+                                <span class="text-sm ">427  Edington Drive</span>
+                                <img src="./src/img/location.png" alt="" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="flex flex-col text-start">
+                            <span class="text-sm font-semibold leading-7 text-green mb-1">ARRIVE</span>
+                            <input type="text" placeholder="Drop home location" class="text-2xl placeholder:text-2xl placeholder:text-smoke-c7 outline-none mb-8">
+                            <div class="flex justify-between items-center font-medium">
+                                <span class="text-sm ">4130  Public Works Drive</span>
+                                <img src="./src/img/location.png" alt="" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="max-w-full md:max-w-[450px] flex items-center justify-center w-full md:w-1/2" data-aos="fade-left" data-aos-duration="800"  data-aos-once="true">
+                        <img src="./src/img/Map.png" alt="" loading="lazy" class="aspect-[310/407] w-full">
+                    </div>
+                </div>
+            </section>
+            <section class="mb-28 text-center">
+                <h3 class="text-3xl xs:text-4xl text-orange-f4 font-highlights mb-2" data-aos="fade-up" data-aos-duration="700"  data-aos-once="true">Newar Me</h3>
+                <h2 class="text-4xl xs:text-6xl font-bold max-w-[590px] mb-4 mx-auto" data-aos="fade-up" data-aos-duration="750"  data-aos-once="true">Our regular updated new blogs.</h2>
+                <span class="text-base text-gray font-normal ">Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 20mins.</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+                    <div class="flex flex-col" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">
+                        <img src="./src/img/img_new.png" alt="img" class="max-w-[368px] aspect-video object-cover" loading="lazy">
+                        <div class="flex flex-col p-8 text-start shadow-md">
+                            <span class="text-3xl font-bold text-black-17 mb-3 cursor-pointer">Riders</span>
+                            <p class="max-w-[270px] mb-6 text-gray-93 text-base font-normal" >We store the vast majority of the digital assets in secure ..</p>
+                            <div class="bg-green rounded-2xl flex gap-2 px-5 py-3 w-auto justify-center items-center max-w-[178px]">
+                                <span class="text-white text-base">Apply Now</span>
+                                <button class="w-10 h-10 bg-inherit sm:bg-white rounded-lg flex justify-center items-center text-white sm:text-green hover:bg-inherit hover:border-2 hover:border-white hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">
+                        <img src="./src/img/img_new2.png" alt="img" class="max-w-[368px] aspect-video object-cover" loading="lazy">
+                        <div class="flex flex-col p-8 text-start  shadow-md">
+                            <span class="text-3xl font-bold text-black-17 mb-3 cursor-pointer">Restaurants</span>
+                            <p class="max-w-[270px] mb-6 text-gray-93 text-base font-normal">We store the vast majority of the digital assets in secure ..</p>
+                            <div class="bg-orange rounded-2xl flex gap-2 px-5 py-3 w-auto justify-center items-center max-w-[178px]">
+                                <span class="text-white text-base">Apply Now</span>
+                                <button class="w-10 h-10 bg-inherit sm:bg-white rounded-lg flex justify-center items-center text-white sm:text-orange hover:bg-inherit hover:border-2 hover:border-white hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">
+                        <img src="./src/img/img_new3.png" alt="img" class="max-w-[368px] aspect-video object-cover" loading="lazy">
+                        <div class="flex flex-col p-8 text-start  shadow-md">
+                            <span class="text-3xl font-bold text-black-17 mb-3 cursor-pointer">Community</span>
+                            <p class="max-w-[270px] mb-6 text-gray-93 text-base font-normal">We store the vast majority of the digital assets in secure ..</p>
+                            <div class="bg-yellow rounded-2xl flex gap-2 px-5 py-3 w-auto justify-center items-center max-w-[178px]">
+                                <span class="text-white text-base">Apply Now</span>
+                                <button class="w-10 h-10 bg-inherit sm:bg-white rounded-lg flex justify-center items-center text-white sm:text-yellow hover:bg-inherit hover:border-2 hover:border-white hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-28 text-center">
+                <div class="flex flex-col md:flex-row justify-around items-center mb-28 gap-y-10" >
+                    <div class="max-w-[267px] w-full" data-aos="fade-right" data-aos-duration="800"  data-aos-once="true">
+                        <img src="./src/img/mobie.png" alt="" loading="lazy" class="w-full aspect-[267/553]">
+                    </div>
+                    <div class=" max-w-[375px] text-start " data-aos="fade-left" data-aos-duration="800"  data-aos-once="true">
+                        <h3 class="text-3xl font-bold mb-5">Have you got our App?</h3>
+                        <p class="text-base text-gray font-normal mb-10">Best cooks and best delivery guys all at your service. Hot tasty food</p>
+                        <div class="flex justify-between gap-3">
+                            <div class="px-4 py-3 xs:px-6 xs:py-4 border border-border rounded-2xl flex gap-5 items-center hover:bg-slate-200 transition-all duration-300">
+                                <img src="./src/img/app_store.png" alt="" class="w-8 h-8 xs:w-10 xs:h-10" loading="lazy">
+                                <span class="text-sm text-black font-medium">App Store</span>
+                            </div>
+                            <div class="px-4 py-3 xs:px-6 xs:py-4 border border-border rounded-2xl flex gap-5 items-center hover:bg-slate-200 transition-all duration-300">
+                                <img src="./src/img/Play_store.png" alt="" class="w-8 h-8 xs:w-10 xs:h-10" loading="lazy">
+                                <span class="text-sm text-black font-medium">Play Store</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-full rounded-3xl bg-radion1 py-8 px-6 sm:py-14 sm:px-12 lg:px-20 xl:px-24 text-start flex items-center gap-2 flex-col lg:flex-row" data-aos="flip-down" data-aos-duration="1000"  data-aos-once="true">
+                    <div class="max-w-full sm:max-w-[75%] lg:max-w-[50%]">
+                        <h3 class=" max-w-full  text-3xl lg:text-4xl text-white mb-5 font-bold">Subscribe newsletter</h3>
+                        <p class=" max-w-full text-base lg:max-w-[350px] text-white">Best cooks and best delivery guys all at your service. Hot tasty food</p>
+                    </div>
+                    
+                    .<div class=" max-w-full sm:max-w-[464px] md:max-w-[370px] lg:max-w-[464px] flex bg-white rounded-2xl items-stretch overflow-hidden ">
+                        <div class="px-3 flex items-center flex-1 ">
+                            <input type="text" class=" max-w-[160px] 2xs:max-w-full outline-none placeholder:text-base  text-base leading-4  flex-1 overflow-hidden mr-3" placeholder="Enter your email address ..">
+                        </div>
+                        <div class="bg-green h-full flex gap-3 px-0 py-3 sm:pl-5 sm:pr-3 items-center">
+                            <span class="text-base text-white hidden sm:block md:hidden lg:block">Discover</span>
+                            <button class="w-10 h-10 bg-inherit sm:bg-white rounded-lg flex justify-center items-center text-white sm:text-black hover:bg-inherit hover:border-2 hover:border-white hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb-24">
+                <h3 class="text-3xl md:text-4xl font-bold mb-10" data-aos="fade-up" data-aos-duration="800"  data-aos-once="true">Popular countries with us</h3>
+                <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 gap-y-10">
+                    
+                    <ul class="flex flex-col gap-y-4 md:gap-y-6 text-center xs:text-start">
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">United States</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Spain</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Brazil</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Mexico</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Japan</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-y-4 md:gap-y-6 text-center xs:text-start">
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Canada </a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Australia</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Poland</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">United Kingdom</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Italy</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-y-4 md:gap-y-6 text-center xs:text-start">
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Switzerland</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Chile</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">New Zealand</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Tiwan (ROC)</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">South Africa</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-y-4 md:gap-y-6 text-center xs:text-start">
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Ecuador</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Ireland</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Sri Lanka</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Dominican Republic</a></li>
+                        <li class=""> <a href="#" class="text-lg text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Sweden</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class=" bg-gray-f8">
+        <div class="max-w-xl mx-auto">
+        <div class="container">
+        <div class="grid grid-cols-2 xs:grid-cols-4 md:grid-cols-6 gap-5 py-16 gap-y-10"> 
+            <div class=" col-span-2 xs:col-span-4 md:col-span-2 max-w-full xs:max-w-[75%] md:max-w-[270px] mb-4 md:mb-0">
+                <div class="flex gap-3 h-4 sm:h-6 mb-9" id="logo">
+                    <img src="./src/img/Logo.png" alt="" loading="lazy">
+                    <img src="./src/img/Besnik.png" alt="" loading="lazy">
+                </div>
+                <p class="text-base text-gray-78 mb-10" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Retail food delivery is a courier service in which a restaurant, store, or independent food-delivery</p>
+                <div class="flex gap-4 ">
+                    <div class="w-7 h-7 bg-black rounded-md flex justify-center items-center hover:scale-110 transition-all duration-300" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true">
+                        <img src="./src/img/icon_fb.png" alt="" loading="lazy">
+                    </div>
+                    <div class="w-7 h-7 bg-black rounded-md flex justify-center items-center hover:scale-110 transition-all duration-300" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true">
+                        <img src="./src/img/icon_tw.png" alt="" loading="lazy">
+                    </div>
+                    <div class="w-7 h-7 bg-black rounded-md flex justify-center items-center hover:scale-110 transition-all duration-300" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true">
+                        <img src="./src/img/icon_in.png" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-start md:items-center">
+                <span class="text-lg text-black-03 mb-5 md:mb-10 inline-block font-medium">Company</span>
+                <ul class="flex flex-col gap-3 md:gap-4">
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">About</a></li>
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Terms of Use</a></li>
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">How it Works</a></li>
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Cotact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-start md:items-center">
+                <span class="text-lg text-black-03 mb-5 md:mb-10 inline-block font-medium">Get Help</span>
+                <ul class="flex flex-col gap-3 md:gap-4">
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Support Carrer</a></li>
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">24h Service</a></li>
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Quick Chat</a></li>
+
+                </ul>
+            </div>
+            <div class="flex flex-col items-start md:items-center">
+                <span class="text-lg text-black-03 mb-5 md:mb-10 inline-block font-medium">Support</span>
+                <ul class="flex flex-col gap-3 md:gap-4">
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">About</a></li>
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Terms of Use</a></li>
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-start md:items-center">
+                <span class="text-lg text-black-03 mb-5 md:mb-10 inline-block font-medium">Contact</span>
+                <ul class="flex flex-col gap-3 md:gap-4">
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">WhatsApp</a></li>
+                    <li><a href="#" class="text-gray text-sm font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Support 24</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full bg-gray-E6 h-[1px]"></div>
+        <div class="flex justify-between py-6 flex-col xs:flex-row gap-3">
+            <span class="text-sm text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Copyright © 2021 Besnik.com</span>
+            <span class="text-sm text-gray-66 font-normal" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">Created by <p class="text-[#3E3E3E] font-medium inline">Besnik</p></span>
+        </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+<script src="./src/carosel/jquery.min.js"></script>
+<script src="./src/carosel/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./src/main.js"></script>
+
+</html>
